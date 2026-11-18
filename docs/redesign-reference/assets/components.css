@@ -1,0 +1,12 @@
+/* Reusable component host defaults. Component visuals continue to use shared design tokens. */
+ui-sidebar, ui-panel, ui-kpi, ui-activity, ui-chat-message, ui-process-node { box-sizing: border-box; }
+ui-sidebar { display: block; }
+ui-topbar { display: flex; }
+ui-kpi, ui-panel { display: block; min-width: 0; }
+ui-badge, ui-sla { display: inline-flex; align-items: center; }
+ui-activity { display: flex; }
+ui-chat-message, ui-process-node { display: block; }
+
+/* Prevent custom-element defaults from affecting intrinsic layout. */
+ui-sidebar, ui-topbar, ui-kpi, ui-panel, ui-badge, ui-sla, ui-activity,
+ui-chat-message, ui-process-node { font: inherit; color: inherit; }
